@@ -1,0 +1,229 @@
+/*** You can edit this whole file.***/
+
+/* Global editions */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+/*  @media screen 1280px-800px */
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 6.66%;
+  line-height: var(--spacer-5);
+  padding: 4px 10% 6px 10%;
+  color: var(--gray-4);
+  background-color: var(--secondary);
+}
+
+.title {
+  display: flex;
+}
+
+.img-logo {
+  height: var(--spacer-5);
+}
+
+.title-logo {
+  font-size: var(--font-size-3);
+  margin-left: var(--spacer-3);
+}
+
+.menu li {
+  float: left;
+  display: block;
+  margin: 0rem 1em;
+}
+
+.menu a {
+  color: var(--gray-4);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-heavy);
+}
+
+.active a {
+  text-decoration-line: underline;
+  text-underline-offset: var(--spacer-2);
+  text-decoration-thickness: 2px;
+}
+
+/* CARDS */
+.body-container {
+  padding: 0% 10%;
+  user-select: unset;
+}
+
+.body-container a {
+  color: var(--gray-4);
+  font-size: var(--font-size-3);
+  text-align: center;
+}
+
+.title-container h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-1);
+  margin: 1em 0;
+  width: 100%;
+  height: 100%;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: 31.25% 31.25% 31.25%;
+  gap: 3.125%;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  box-shadow: var(--shadows);
+  height: maxmin(400px);
+  border: 1px solid var(--gray-2);
+}
+
+.content h2 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+}
+
+.content p {
+  margin: 0.9em 0;
+  font-size: 16px;
+}
+
+.button-container {
+  align-self: flex-end;
+  width: 100%;
+}
+
+.button-container button {
+  background-color: var(--primary);
+  color: var(--gray-4);
+  width: 100%;
+  height: 3em;
+  border: 10px;
+}
+
+.button-container img {
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.button-container a {
+  font-weight: var(--font-weight-bold);
+}
+
+/*  @media screen 1440px-900px */
+@media screen and (min-width: 1440px) {
+  .navbar {
+    padding: 4px 15.65% px;
+  }
+
+  .body-container {
+    padding: 0% 15.65%;
+  }
+
+  .class-grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: auto;
+    justify-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    box-shadow: var(--shadows);
+    height: maxmin(400px);
+    border: 1px solid var(--gray-2);
+  }
+
+  .content p {
+    padding-right: 0;
+    font-size: 16px;
+  }
+}
+
+/*  @media screen 480px-960px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 4px 0 4px 2.75%;
+  }
+
+  .title-logo {
+    font-size: var(--font-size-3);
+    margin-left: var(--spacer-3);
+  }
+
+  .body-container {
+    padding: 0% 2.75%;
+  }
+
+  .class-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 2.5%;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    padding: 1em;
+    box-shadow: var(--shadows);
+    height: minmax(278px);
+    border: 1px solid var(--gray-2);
+  }
+
+  .button-container {
+    padding-top: 0;
+  }
+
+  .content h2 {
+    font-size: 1.1em;
+  }
+
+  .content p {
+    padding-right: 0;
+    font-size: 16px;
+  }
+}

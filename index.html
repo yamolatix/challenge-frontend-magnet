@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+  In this file:
+  - You CAN edit the <body> structure and contents.
+  - You CAN change the current tags and their order inside the <body>.
+  - You CAN add new tags, ids and classes or wrap the existing ones inside the <body>.
+  BUT:
+  - You CANNOT edit the <head>.
+  - You CANNOT add additional external references (libraries, frameworks, etc.), this is going to be automatically tested.
+  - You CANNOT add javascript code or additional stylesheets. The test only copies your index.html and style.css files.
+  - You CANNOT remove template tags (variables between {}). The test may change the content of these.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnet Frontend Test</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <script src="site.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- container title -->
+    <div class="title">
+      <img class="img-logo" src="img/logo.png">
+      <h1 class="title-logo"> Dogos </h1>
+    </div>
+    <!-- container menu -->
+    <div class="menu"> {navlinks} </div>
+  </nav>
+
+  <!-- Container -->
+  <div class="body-container">
+    <!-- container title -->
+    <div class="title-container">
+      <!-- title -->
+      <h1>{title}</h1>
+    </div>
+
+    <!-- container grid -->
+    <div class="class-grid">
+
+      <!-- first card -->
+      <div class="card">
+        <!-- content card -->
+        <div class="content">
+          {content1}
+        </div>
+        <!-- button container -->
+        <div class="button-container">
+          <button>
+            <img src="img/paw.png"><a href="#">Learn more</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- second card -->
+      <div class="card">
+        <!-- content card -->
+        <div class="content">
+          {content2}
+        </div>
+        <!-- button container -->
+        <div class="button-container">
+          <button>
+            <img src="img/paw.png"><a href="#">Learn more</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- third card -->
+      <div class="card">
+        <!-- content card -->
+        <div class="content">
+          {content3}
+        </div>
+        <div class="button-container">
+          <!-- button container -->
+          <button>
+            <img src="img/paw.png"><a href="#">Learn more</a>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
